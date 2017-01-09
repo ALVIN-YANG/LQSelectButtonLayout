@@ -8,23 +8,31 @@
 
 import UIKit
 
-protocol SearchItemLayoutDelegate {
+protocol FlexibleLayoutDelegate {
 	func collectionView(_ collectionView: UICollectionView, widthForTextAt indexPath: IndexPath) -> CGFloat
+  
+  func collectionViewContaintHeight(_ height: CGFloat)
 }
-class SearchItemLayout: UICollectionViewLayout {
+class FlexibleLayout: UICollectionViewLayout {
 	public var leftWidthInLine = CGFloat()
 	public var lines = 1
 	public var leftMargin = CGFloat(10)
 	public var lineSpace = CGFloat(10)
-	public var lineHeight = CGFloat(25)
+	public var lineHeight = CGFloat(34)
+  
 	
-	var delegate: SearchItemLayoutDelegate?
+	var delegate: FlexibleLayoutDelegate?
 	
 	fileprivate var cache = [UICollectionViewLayoutAttributes]()
 	
 	override func prepare() {
 		doit()
 	}
+  
+  func contantHeight() -> CGFloat {
+    let n = CGFloat(lines)
+    return n * (lineHeight + lineSpace) + lineSpace
+  }
 	
 	func doit() {
 		if cache.count < 1 {
@@ -50,6 +58,7 @@ class SearchItemLayout: UICollectionViewLayout {
 				attribute.frame = frame
 				cache.append(attribute)
 			}
+      delegate?.collectionViewContaintHeight(contantHeight())
 		}
 	}
 	

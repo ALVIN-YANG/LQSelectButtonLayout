@@ -1,0 +1,24 @@
+PODS:
+  - PageMenu (1.2.9)
+  - SnapKit (3.1.2)
+
+DEPENDENCIES:
+  - PageMenu (from `https://github.com/orazz/PageMenu.git`)
+  - SnapKit
+
+EXTERNAL SOURCES:
+  PageMenu:
+    :git: https://github.com/orazz/PageMenu.git
+
+CHECKOUT OPTIONS:
+  PageMenu:
+    :commit: ace3d8d095c9c165113d3ac797f317fe7faecbae
+    :git: https://github.com/orazz/PageMenu.git
+
+SPEC CHECKSUMS:
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+
+PODFILE CHECKSUM: ecbb4ba347d4194b1ad12456d9fc7118a1e92054
+
+COCOAPODS: 1.2.0.beta.1

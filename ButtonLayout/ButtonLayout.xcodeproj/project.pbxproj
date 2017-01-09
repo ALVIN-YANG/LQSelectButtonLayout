@@ -13,11 +13,16 @@
 		1BBA74EE1E227A0E00A2AC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBA74ED1E227A0E00A2AC45 /* Assets.xcassets */; };
 		1BBA74F11E227A0E00A2AC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBA74EF1E227A0E00A2AC45 /* LaunchScreen.storyboard */; };
 		1BBA74F91E227A4600A2AC45 /* SearchItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA74F81E227A4600A2AC45 /* SearchItemLayout.swift */; };
-		1BBA74FB1E2299AA00A2AC45 /* SearchItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BBA74FA1E2299AA00A2AC45 /* SearchItemCell.xib */; };
 		1BBA74FD1E2299D200A2AC45 /* SearchItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA74FC1E2299D200A2AC45 /* SearchItemCell.swift */; };
+		44884070B176500C72830D0D /* Pods_ButtonLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB75BB7E1B40DC0DDD8E9F7 /* Pods_ButtonLayout.framework */; };
+		E14E11551E234C7500DC936A /* SearchCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E11541E234C7500DC936A /* SearchCountryViewController.swift */; };
+		E14E11571E23758E00DC936A /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E11561E23758E00DC936A /* SearchResultCell.swift */; };
+		E14E11591E23870000DC936A /* SearchCellHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E11581E23870000DC936A /* SearchCellHeaderView.swift */; };
+		E14E115B1E23937D00DC936A /* SearchHotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E115A1E23937D00DC936A /* SearchHotCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11FA55CF6A24817B48AB4B55 /* Pods-ButtonLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButtonLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ButtonLayout/Pods-ButtonLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		1BBA74E31E227A0E00A2AC45 /* ButtonLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBA74E61E227A0E00A2AC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBA74E81E227A0E00A2AC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +31,13 @@
 		1BBA74F01E227A0E00A2AC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BBA74F21E227A0E00A2AC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BBA74F81E227A4600A2AC45 /* SearchItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemLayout.swift; sourceTree = "<group>"; };
-		1BBA74FA1E2299AA00A2AC45 /* SearchItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchItemCell.xib; sourceTree = "<group>"; };
 		1BBA74FC1E2299D200A2AC45 /* SearchItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemCell.swift; sourceTree = "<group>"; };
+		CEB75BB7E1B40DC0DDD8E9F7 /* Pods_ButtonLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButtonLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14E11541E234C7500DC936A /* SearchCountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCountryViewController.swift; sourceTree = "<group>"; };
+		E14E11561E23758E00DC936A /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		E14E11581E23870000DC936A /* SearchCellHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCellHeaderView.swift; sourceTree = "<group>"; };
+		E14E115A1E23937D00DC936A /* SearchHotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHotCell.swift; sourceTree = "<group>"; };
+		FB1357D19B5B02688513C83D /* Pods-ButtonLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButtonLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-ButtonLayout/Pods-ButtonLayout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44884070B176500C72830D0D /* Pods_ButtonLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,8 @@
 			children = (
 				1BBA74E51E227A0E00A2AC45 /* ButtonLayout */,
 				1BBA74E41E227A0E00A2AC45 /* Products */,
+				59E53FF8665D4ABB2CE1411E /* Pods */,
+				46F9FD90A220751146F2780D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,14 +76,34 @@
 				1BBA74E61E227A0E00A2AC45 /* AppDelegate.swift */,
 				1BBA74E81E227A0E00A2AC45 /* ViewController.swift */,
 				1BBA74EA1E227A0E00A2AC45 /* Main.storyboard */,
+				E14E11541E234C7500DC936A /* SearchCountryViewController.swift */,
+				E14E11581E23870000DC936A /* SearchCellHeaderView.swift */,
+				E14E11561E23758E00DC936A /* SearchResultCell.swift */,
+				E14E115A1E23937D00DC936A /* SearchHotCell.swift */,
 				1BBA74F81E227A4600A2AC45 /* SearchItemLayout.swift */,
 				1BBA74FC1E2299D200A2AC45 /* SearchItemCell.swift */,
-				1BBA74FA1E2299AA00A2AC45 /* SearchItemCell.xib */,
 				1BBA74ED1E227A0E00A2AC45 /* Assets.xcassets */,
 				1BBA74EF1E227A0E00A2AC45 /* LaunchScreen.storyboard */,
 				1BBA74F21E227A0E00A2AC45 /* Info.plist */,
 			);
 			path = ButtonLayout;
+			sourceTree = "<group>";
+		};
+		46F9FD90A220751146F2780D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB75BB7E1B40DC0DDD8E9F7 /* Pods_ButtonLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E53FF8665D4ABB2CE1411E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11FA55CF6A24817B48AB4B55 /* Pods-ButtonLayout.debug.xcconfig */,
+				FB1357D19B5B02688513C83D /* Pods-ButtonLayout.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BBA74F51E227A0E00A2AC45 /* Build configuration list for PBXNativeTarget "ButtonLayout" */;
 			buildPhases = (
+				C8E3383CD2B567274D035FEA /* [CP] Check Pods Manifest.lock */,
 				1BBA74DF1E227A0E00A2AC45 /* Sources */,
 				1BBA74E01E227A0E00A2AC45 /* Frameworks */,
 				1BBA74E11E227A0E00A2AC45 /* Resources */,
+				1C9D24F94405A99A699F4256 /* [CP] Embed Pods Frameworks */,
+				35637202F7AA4E54C6644F23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,7 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BBA74FB1E2299AA00A2AC45 /* SearchItemCell.xib in Resources */,
 				1BBA74F11E227A0E00A2AC45 /* LaunchScreen.storyboard in Resources */,
 				1BBA74EE1E227A0E00A2AC45 /* Assets.xcassets in Resources */,
 				1BBA74EC1E227A0E00A2AC45 /* Main.storyboard in Resources */,
@@ -142,6 +177,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C9D24F94405A99A699F4256 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ButtonLayout/Pods-ButtonLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35637202F7AA4E54C6644F23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ButtonLayout/Pods-ButtonLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E3383CD2B567274D035FEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BBA74DF1E227A0E00A2AC45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,8 +232,12 @@
 			files = (
 				1BBA74FD1E2299D200A2AC45 /* SearchItemCell.swift in Sources */,
 				1BBA74E91E227A0E00A2AC45 /* ViewController.swift in Sources */,
+				E14E11551E234C7500DC936A /* SearchCountryViewController.swift in Sources */,
 				1BBA74F91E227A4600A2AC45 /* SearchItemLayout.swift in Sources */,
+				E14E11591E23870000DC936A /* SearchCellHeaderView.swift in Sources */,
+				E14E11571E23758E00DC936A /* SearchResultCell.swift in Sources */,
 				1BBA74E71E227A0E00A2AC45 /* AppDelegate.swift in Sources */,
+				E14E115B1E23937D00DC936A /* SearchHotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +358,7 @@
 		};
 		1BBA74F61E227A0E00A2AC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FA55CF6A24817B48AB4B55 /* Pods-ButtonLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -285,6 +373,7 @@
 		};
 		1BBA74F71E227A0E00A2AC45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB1357D19B5B02688513C83D /* Pods-ButtonLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -315,6 +404,7 @@
 				1BBA74F71E227A0E00A2AC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

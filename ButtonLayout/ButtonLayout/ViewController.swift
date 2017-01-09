@@ -7,62 +7,33 @@
 //
 
 import UIKit
+import PageMenu
 
 class ViewController: UIViewController {
 
-	var collectionView: UICollectionView?
-	
-	var elements = ["是的", "顺丰到付", "放大放大的", "但是", "得分", "哥特而过", "地方如果认购", "杜莎夫人", "霍元甲"]
+  var pageMenu : CAPSPageMenu?
+	var controllerArray : [UIViewController] = []
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		let layout = SearchItemLayout()
-		layout.delegate = self
-		collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-		setupCollectionView()
-		view.addSubview(collectionView!)
-		collectionView?.reloadData()
-	}
-	
-	func setupCollectionView() {
-		collectionView?.backgroundColor = UIColor.black
-		
-		collectionView?.register(UINib.init(nibName: "SearchItemCell", bundle: nil), forCellWithReuseIdentifier: "CellIdentifier")
-		collectionView?.delegate = self
-		collectionView?.dataSource = self
-	}
-}
+    let controller1 = SearchCountryViewController()
+    controller1.title = "国家"
+    let controller2 = SearchCountryViewController()
+    controller2.title = "城市"
+    controllerArray.append(controller1)
+    controllerArray.append(controller2)
+    
+    let parameters: [CAPSPageMenuOption] = [
+      .menuItemSeparatorWidth(4.3),
+      .useMenuLikeSegmentedControl(true),
+      .menuItemSeparatorPercentageHeight(0.1)
+    ]
+    
+    
+    pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: view.bounds, pageMenuOptions: parameters)
 
-extension ViewController: UICollectionViewDelegate {
-	
-}
-
-extension ViewController: UICollectionViewDataSource {
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		print("number: ", elements.count)
-		return elements.count
+    self.view.addSubview(pageMenu!.view)
 	}
-	
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-				let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellIdentifier", for: indexPath) as! SearchItemCell
-				cell.textLabel.text = elements[indexPath.row]
-				cell.layer.cornerRadius = 5
-				cell.clipsToBounds = true
-				cell.backgroundColor = UIColor.white
-				return cell
-	}
-}
-
-extension ViewController: SearchItemLayoutDelegate {
-	func collectionView(_ collectionView: UICollectionView, widthForTextAt indexPath: IndexPath) -> CGFloat {
-		debugPrint(elements.count)
-		debugPrint(indexPath.row)
-		let text: NSString = elements[indexPath.row] as NSString
-		
-		let frame = text.boundingRect(with: CGSize.init(width: CGFloat.greatestFiniteMagnitude, height: CGFloat(25)), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 15)], context: nil)
-		return ceil(frame.size.width) + 14
-	}
-	
 }
 
