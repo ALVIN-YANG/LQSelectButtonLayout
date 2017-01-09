@@ -34,7 +34,14 @@ class SearchCountryViewController: UIViewController {
     tableView.separatorStyle = .none
     tableView.register(SearchResultCell.self, forCellReuseIdentifier: reuseIdentifier)
     view.addSubview(tableView)
-    DispatchQueue.main.asyncAfter(deadline: DispatchTime.init(uptimeNanoseconds: 2)) { 
+//    DispatchQueue.main.asyncAfter(deadline: DispatchTime.init(uptimeNanoseconds: 2)) { 
+//      self.tableView.reloadData()
+//    }
+    
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    DispatchQueue.main.async {
       self.tableView.reloadData()
     }
   }
