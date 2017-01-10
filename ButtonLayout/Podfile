@@ -8,4 +8,7 @@ target 'ButtonLayout' do
   # Pods for ButtonLayout
 pod 'PageMenu', :git => 'https://github.com/orazz/PageMenu.git'
 pod 'SnapKit'
+
+
+pod 'TwicketSegmentedControl'
 end

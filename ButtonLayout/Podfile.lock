@@ -1,10 +1,12 @@
 PODS:
   - PageMenu (1.2.9)
   - SnapKit (3.1.2)
+  - TwicketSegmentedControl (0.1.1)
 
 DEPENDENCIES:
   - PageMenu (from `https://github.com/orazz/PageMenu.git`)
   - SnapKit
+  - TwicketSegmentedControl
 
 EXTERNAL SOURCES:
   PageMenu:
@@ -18,7 +20,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  TwicketSegmentedControl: bbb2d155792dbfcee7fea995a614d0c0a3de4a16
 
-PODFILE CHECKSUM: ecbb4ba347d4194b1ad12456d9fc7118a1e92054
+PODFILE CHECKSUM: 042fa895f9972521604f0bc460aaf9b16a318326
 
 COCOAPODS: 1.2.0.beta.1
